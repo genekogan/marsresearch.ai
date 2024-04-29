@@ -4,31 +4,21 @@ import axios from "axios";
 
 export default function Home() {
   const [prompt, setPrompt] = useState("");
-  // const [isCreating, setIsCreating] = useState(false);
-  // const [resultImageUrl, setResultImageUrl] = useState(undefined);
 
-  // const handleSubmit = async () => {
-  //   try {
-  //     setIsCreating(true);
-  //     const res = await axios.post("/api/create", { text_input: prompt });
-  //     setIsCreating(false);
-  //     setResultImageUrl(res.data.uri);
-  //   } catch (e) {
-  //     console.error(e);
-  //     setIsCreating(false);
-  //   }
-  // };
   return (
     <main className="p-4 relative main-content">
-      <h1 className="text-4xl font-bold absolute top-0 left-0 text-white" style={{ padding: '10px' }}>Coming soon...</h1>
-      <div className="flex justify-center">
-      <Image
-        src="https://d14i3advvh2bvd.cloudfront.net/acb02f61be996decb5a4d8146729fbf9bc93b8ca8d80b4b141ccd8219be53151.jpg"
-        className="rounded-lg shadow-lg"
-        alt="Neocity.network"
-        layout="fill"
-        objectFit="cover"
-      />
+      <div className="flex justify-center relative">
+        <div className="rounded-lg shadow-lg overflow-hidden relative">
+          <Image
+            src="https://d14i3advvh2bvd.cloudfront.net/acb02f61be996decb5a4d8146729fbf9bc93b8ca8d80b4b141ccd8219be53151.jpg"
+            alt="Neocity.network"
+            width={1920}
+            height={1088}
+          />
+          <div className="absolute inset-0 flex items-center justify-center">
+            <h2 className="text-2xl text-white">Coming Soon</h2>
+          </div>
+        </div>
       </div>
     </main>
   );
