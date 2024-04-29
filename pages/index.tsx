@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { useState } from "react";
-// import axios from "axios";
+import axios from "axios";
 
 export default function Home() {
   const [prompt, setPrompt] = useState("");
@@ -20,15 +20,15 @@ export default function Home() {
   // };
   return (
     <main className="p-4 relative main-content">
-      <h1 className="text-4xl font-bold absolute top-0 left-0 text-white" style={{ padding: '10px' }}>Neocity.network</h1>
+      <h1 className="text-4xl font-bold absolute top-0 left-0 text-white" style={{ padding: '10px' }}>Coming soon...</h1>
       <div className="flex justify-center">
-        <Image
-          src="https://edenartlab-prod-data.s3.us-east-1.amazonaws.com/71005680997a7957d7fc3e7850286cfffbde118466c01eafd0e555318ca0c1b5.jpg"
-          className="rounded-lg shadow-lg"
-          alt="Neocity.network"
-          width={1600}
-          height={1024}
-        />
+      <Image
+        src="https://d14i3advvh2bvd.cloudfront.net/acb02f61be996decb5a4d8146729fbf9bc93b8ca8d80b4b141ccd8219be53151.jpg"
+        className="rounded-lg shadow-lg"
+        alt="Neocity.network"
+        layout="fill"
+        objectFit="cover"
+      />
       </div>
     </main>
   );
